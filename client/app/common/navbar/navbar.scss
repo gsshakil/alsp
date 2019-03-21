@@ -1,0 +1,18 @@
+@import '../common';
+
+.navbar{
+  z-index: 90000;
+  .navbar-brand{
+    margin-right: 50px;
+  }
+  .navbar-nav{
+    margin-top: 10px;
+
+    li{
+      margin-right: 30px;
+    }
+  }
+  .btn-newsletter{
+    margin-top: 10px;
+  }
+}

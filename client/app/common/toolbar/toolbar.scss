@@ -1,0 +1,63 @@
+.toolbar {
+  position: fixed;
+  width: 150px;
+  height: 70%;
+  top: 20%;
+  left: 50px;
+  background-color: #343a40;
+  z-index: 3000;
+  overflow-y: scroll;
+
+  span{
+    background-color: #343a40;
+    color: #ddd;
+    font-size: 11px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25px;
+    text-align: center;
+    padding: 5px 10px;
+  }
+  ul{
+    padding: 0;
+    margin-top: 25px;
+
+    li{
+      list-style: none;
+      float: left;
+      width: 50%;
+      height: 50px;
+      background-color: #f4f4f4;
+      color: #343a40;
+      border: 1px solid #ddd;
+      text-align: center;
+      margin-bottom: 0;
+      img{
+        width: 100%;
+        min-height: 100%;
+      }
+    }
+    li:hover{
+      cursor: pointer;
+    }
+    li.img-sm{
+      padding: 5px 10px 5px 10px;
+    }
+  }
+}
+
+.toolbar::-webkit-scrollbar-track {
+  padding: 2px 0;
+  background-color: #404040;
+}
+
+.toolbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.toolbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #737272;
+}
