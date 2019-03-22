@@ -1,16 +1,16 @@
-import CanvasModule from './canvas'
-import CanvasController from './canvas.controller';
-import CanvasComponent from './canvas.component';
-import CanvasTemplate from './canvas.html';
+import KanvasModule from './kanvas'
+import KanvasController from './kanvas.controller';
+import KanvasComponent from './kanvas.component';
+import KanvasTemplate from './kanvas.html';
 
-describe('Canvas', () => {
+describe('Kanvas', () => {
   let $rootScope, makeController;
 
-  beforeEach(window.module(CanvasModule));
+  beforeEach(window.module(KanvasModule));
   beforeEach(inject((_$rootScope_) => {
     $rootScope = _$rootScope_;
     makeController = () => {
-      return new CanvasController();
+      return new KanvasController();
     };
   }));
 
@@ -30,20 +30,20 @@ describe('Canvas', () => {
     // template specs
     // tip: use regex to ensure correct bindings are used e.g., {{  }}
     it('has name in template [REMOVE]', () => {
-      expect(CanvasTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
+      expect(KanvasTemplate).to.match(/{{\s?\$ctrl\.name\s?}}/g);
     });
   });
 
   describe('Component', () => {
       // component/directive specs
-      let component = CanvasComponent;
+      let component = KanvasComponent;
 
       it('includes the intended template',() => {
-        expect(component.template).to.equal(CanvasTemplate);
+        expect(component.template).to.equal(KanvasTemplate);
       });
 
       it('invokes the right controller', () => {
-        expect(component.controller).to.equal(CanvasController);
+        expect(component.controller).to.equal(KanvasController);
       });
   });
 });

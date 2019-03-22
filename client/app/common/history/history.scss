@@ -4,7 +4,8 @@
   height: 70%;
   top: 20%;
   right: 50px;
-  background-color: #343a40;
+  border: 1px solid #555555;
+  background-color: #4e5155;
   z-index: 2000;
   overflow-y: scroll;
 
@@ -21,7 +22,7 @@
     padding: 5px 10px;
   }
   ul{
-    padding: 0;
+    padding: 15px;
     margin-top: 25px;
 
     li{
