@@ -1,6 +1,6 @@
 class KanvasController {
   constructor() {
-    this.name = 'kanvas';
+
   }
 }
 

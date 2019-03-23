@@ -1,6 +1,5 @@
 class ToolbarController {
   constructor() {
-    this.name = 'toolbar';
     let eCount = 1;
     let hCount = 0;
     let zCount = 0;
@@ -81,8 +80,6 @@ class ToolbarController {
       }
 
       event.dataTransfer.setData("text/html", dragData);
-      // console.log(event.dataTransfer);
-      // event.dataTransfer.setData("text/html", event.target.id);
       // Change the opacity of the draggable element
       event.target.style.opacity = "0.1";
     });
@@ -94,7 +91,6 @@ class ToolbarController {
 
     // Output some text when finished dragging the p element and reset the opacity
     document.addEventListener("dragend", function(event) {
-      // document.getElementById("demo").innerHTML = "Finished dragging the p element.";
       event.target.style.opacity = "1";
     });
 

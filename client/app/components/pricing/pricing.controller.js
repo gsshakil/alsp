@@ -1,6 +1,6 @@
 class PricingController {
   constructor() {
-    this.name = 'pricing';
+
   }
 }
 

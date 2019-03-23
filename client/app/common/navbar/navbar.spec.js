@@ -25,10 +25,6 @@ describe('Navbar', () => {
         $scope: $rootScope.$new()
       });
     });
-
-    it('has a name property', () => { // erase if removing this.name from the controller
-      expect(controller).to.have.property('name');
-    });
   });
 
   describe('View', () => {
@@ -40,10 +36,5 @@ describe('Navbar', () => {
       template = $compile('<navbar></navbar>')(scope);
       scope.$apply();
     });
-
-    it('has name in template', () => {
-      expect(template.find('h1').find('a').html()).to.eq('navbar');
-    });
-
   });
 });

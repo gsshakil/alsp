@@ -1,14 +1,7 @@
 class NewsletterController {
   constructor($scope, $http) {
     'ngInject';
-    this.name = 'newsletter';
-    // this.$scope = $scope;
-    // this.$http = $http;
-    // const user = $scope.user;
 
-    // console.log(user);
-
-    // Construct req data
     const data = {
       members: [
         {
