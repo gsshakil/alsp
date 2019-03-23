@@ -4,12 +4,11 @@
   "description": "Sample Project for Aiva Labs",
   "main": "index.js",
   "engines": {
-    "node": ">=0.12.0"
+    "node": ">=6.0"
   },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.15",
     "angular": "^1.5.0",
-    "bootstrap": "^4.1.0",
     "normalize.css": "^3.0.3",
     "skeleton.css": "^2.0.4"
   },
@@ -60,7 +59,8 @@
   },
   "scripts": {
     "start": "gulp",
-    "test": "karma start"
+    "test": "karma start",
+    "postinstall": "NODE_ENV=production gulp -p"
   },
   "keywords": [
     "webpack",
