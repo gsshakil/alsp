@@ -175,10 +175,7 @@ class ToolbarController {
             innerStyle = `position:absolute; left:${posX}px; top:${posY}px; z-index: ${zCount}`;
             break;
           case 'P':
-            innerData = "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
-             "Nulla maxime iure, optio facere possimus in aut quibusdam deleniti" +
-             "omnis voluptas incidunt temporibus ipsa ratione facilis modi tempore," +
-             "sunt necessitatibus quia!"
+            innerData = `Lorem ipsum dolor sit amet consectetur adipisicing ${'<br>'} elit. Nulla maxime iure, optio facere possimus in aut ${'<br>'} quibusdam deleniti omnis voluptas incidunt temporibus ${'<br>'} ipsa ratione facilis modi tempore, sunt necessitatibus quia!`
             elClass = "el-p-" + eCount;
             innerStyle = `position:absolute; left:${posX}px; top:${posY}px; z-index: ${zCount}`;
             break;

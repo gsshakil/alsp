@@ -2,15 +2,15 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-body">
-          <form>
+          <form ng-submit="submitNewsletterForm()">
               <div class="form-group">
-                <input type="text" class="form-control" id="firstName" aria-describedby="emailHelp" placeholder="Enter Your First Name">
+                <input type="text" class="form-control" ng-model="firstName" value="Tamin" id="firstName" aria-describedby="emailHelp" placeholder="Enter Your First Name" required>
               </div>
               <div class="form-group">
-                  <input type="text" class="form-control" id="lastName" aria-describedby="emailHelp" placeholder="Enter Your Last Name">
+                  <input type="text" class="form-control" ng-model="lastName" value="Ahmed" id="lastName" aria-describedby="emailHelp" placeholder="Enter Your Last Name" required>
                 </div>
               <div class="form-group">
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email">
+                  <input type="email" class="form-control" ng-model="email" value="tamim@gmail.com" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email" required>
                 </div>
               <button type="submit" class="btn btn-primary btn-block">Submit</button>
             </form>
