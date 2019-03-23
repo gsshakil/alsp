@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Sample Project for Aiva Labs",
   "main": "index.js",
+  "engines": {
+    "node": ">=0.12.0"
+  },
   "dependencies": {
     "@uirouter/angularjs": "^1.0.15",
     "angular": "^1.5.0",
