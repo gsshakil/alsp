@@ -5,8 +5,6 @@ class ToolbarController {
     let hCount = 0;
     let zCount = 0;
 
-    // $( "#elObj" ).draggable();
-
     /* Events fired on the drag target */
 
     document.addEventListener("dragstart", function(event) {
@@ -210,45 +208,42 @@ class ToolbarController {
             innerData = "INPUT";
             elClass = "form-control el-input-text-" + eCount;
             innerStyle = `position:absolute; left:${posX}px; top:${posY}px; width: 250px; height: 40px; z-index: ${zCount}`;
-
             break;
-          case 'el-textarea':
+          case 'TEXTAREA':
             innerData = "TEXTAREA";
-            elClass = "form-control el-input-textarea" + eCount;
+            elClass = "form-control el-input-textarea-" + eCount;
             innerStyle = `position:absolute; left:${posX}px; top:${posY}px; width: 250px; rows: 4; z-index: ${zCount}`;
-
             break;
-          case 'el-check':
+          case 'CHECKBOX':
             innerData = "CHECKBOX";
             elClass = "form-control el-checkbox-" + eCount;
-            innerStyle = `position:absolute; left:${posX}px; top:${posY}px; z-index: ${zCount}`;
+            innerStyle = `position:absolute; left:${posX}px; top:${posY}px;  width: 250px; z-index: ${zCount}`;
 
             break;
-          case 'el-radio':
+          case 'RADIO':
             innerData = "RADIO";
             elClass = "form-control el-radio-" + eCount;
             innerStyle = `position:absolute; left:${posX}px; top:${posY}px; width: 250px; z-index: ${zCount}`;
             break;
-          case 'el-select':
+          case 'SELECT':
             innerData = "SELECT";
             elClass = "form-control el-select-" + eCount;
-            innerStyle = `position:absolute; left:${posX}px; top:${posY}px; width: 250px; z-index: ${zCount}`;
-
+            innerStyle = `position:absolute; left:${posX}px; top:${posY}px; width: 250px; height: 40px; z-index: ${zCount}`;
             break;
-          case 'el-panel':
-            innerData = "PANEL";
+          case 'PANEL':
+            innerData = "";
             elClass = "el-panel-" + eCount;
-            innerStyle = `position:absolute; left:${posX}px; top:${posY}px; background-color: #999; width: 350px; height: 250px; z-index: ${zCount}`;
+            innerStyle = `position:absolute; left:${posX}px; top:${posY}px; background-color: #333; width: 350px; height: 250px; z-index: ${zCount}`;
 
             break;
-          case 'el-image':
-            innerData = "IMAGE";
-            elClass = ".el-image-" + eCount;
+          case 'IMG':
+            innerData = "";
+            elClass = "el-image-" + eCount;
             innerStyle = `position:absolute; left:${posX}px; top:${posY}px; width: 150px; height: 150px; z-index: ${zCount}`;
             break;
-          case 'el-icon':
-            innerData = "I";
-            elClass = "fab fa-angular fa-3x .el-icon-" + eCount;
+          case 'I':
+            innerData = "";
+            elClass = "fab fa-angular fa-3x el-icon-" + eCount;
             innerStyle = `position:absolute; left:${posX}px; top:${posY}px; z-index: ${zCount}`;
             break;
         }
