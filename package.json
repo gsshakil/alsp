@@ -59,9 +59,9 @@
     "yargs": "^3.9.0"
   },
   "scripts": {
-    "start": "gulp",
+    "start": "node index.js",
     "test": "karma start",
-    "postinstall": "gulp --aot -prod"
+    "postinstall": "gulp webpack --aot -p"
   },
   "keywords": [
     "webpack",
