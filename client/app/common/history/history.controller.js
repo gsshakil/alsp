@@ -6,8 +6,8 @@ class HistoryController {
     const count = 0;
     $( "#drophistory" ).sortable({
       cursor: "move",
-      over: function( event, ui ) {
-
+      stop: function( event, ui ) {
+          console.log("Moved");
       },
       classes: {
         "ui-sortable": "highlight"
